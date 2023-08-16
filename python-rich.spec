@@ -13,6 +13,7 @@ Source0:	https://pypi.io/packages/source/%{mod}/%{module}/%{module}-%{version}.t
 
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(poetry-core)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 # tests
