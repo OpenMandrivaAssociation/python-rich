@@ -3,7 +3,7 @@
 
 Summary:	A Python library for rich text and beautiful formatting in the terminal
 Name:		python-%{module}
-Version:	13.8.0
+Version:	13.8.1
 Release:	1
 Group:		Development/Python
 License:	MIT
