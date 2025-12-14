@@ -3,15 +3,15 @@
 
 Summary:	A Python library for rich text and beautiful formatting in the terminal
 Name:		python-%{module}
-Version:	13.9.4
-Release:	2
+Version:	14.2.0
+Release:	1
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/Textualize/rich
 #Source0::		https://github.com/Textualize/rich/v%{version}/%{module}-%{version}.tar.gz
 Source0:	https://pypi.io/packages/source/%{mod}/%{module}/%{module}-%{version}.tar.gz
 
-BuildRequires:	pkgconfig(python3)
+BuildSystem:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(poetry-core)
 BuildRequires:	python%{pyver}dist(setuptools)
@@ -34,15 +34,3 @@ code, tracebacks, and more — out of the box.
 %doc README.md
 %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}-*-info/
-
-#-----------------------------------------------------------------------
-
-%prep
-%autosetup -n %{module}-%{version}
-
-%build
-%py_build
-
-%install
-%py_install
-
