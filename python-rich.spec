@@ -3,8 +3,8 @@
 
 Summary:	A Python library for rich text and beautiful formatting in the terminal
 Name:		python-%{module}
-Version:	14.2.0
-Release:	2
+Version:	15.0.0
+Release:	1
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/Textualize/rich
